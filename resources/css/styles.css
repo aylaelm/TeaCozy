@@ -79,23 +79,23 @@ main {
 }
 
 /* featured tea section */
+/* TO DO: make the spacing even horizontally between grid elements */
 
 .tea-of-the-month-section {
     display: block;
+    margin-top: 100px;
     width: 100%;
     text-align: center;
-    border: 1px solid red;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .tea-grid {
     display: flex;
     flex-wrap: wrap;
     width: 1000px;
-    border: 1px solid red;
     justify-content: space-around;
     margin: 0 auto;
-    flex: 2 1 300px;
 }
 
 .tea-grid h4 {
@@ -108,3 +108,43 @@ main {
 }
 
 /* locations section */
+
+.locations-section {
+    display: block;
+    width: 1200px;
+    height: 500px;
+    background-image: url("../media/img-locations-background.jpg");
+    margin: auto;
+    text-align: center;
+}
+
+.locations-content {
+    position: relative;
+    border: 1px solid red;
+}
+
+.locations h2 {
+    margin-bottom: 15px;
+}
+
+.locations-grid {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.locations-grid-block {
+    background-color: black;
+    opacity: 1;
+    line-height: 40px;
+    width: 300px;
+}
+
+/*--- footer ---*/
+
+footer {
+    display: block;
+    border: 1px solid red;
+}
