@@ -1,8 +1,17 @@
-body {
-    color: white;
-    background-color: black;
 
+body {
+    color: seashell;
+    background-color: black;
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    font-size: 22px;
+    opacity: 0.9;
 }
+
+a {
+    color: white;
+}
+
+/*--- header styling ---*/
 
 .logo {
     height: 50px;
@@ -11,14 +20,20 @@ body {
 
 header {
     display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
     height: 69px;
     align-items: center;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 2;
 }
 
 .logo,
 nav {
     width: 50%;
-    display: inline-flex;
+    display: flex;
 }
 
 nav {
@@ -26,16 +41,70 @@ nav {
 }
 
 nav ul {
-    display: flex;
+    display: inline-flex;
     list-style-type: none;
-    justify-content: space-between;
 }
 
 nav ul li {
-    display: inline-flex;
+    padding: 30px 30px;
+}
+
+/*--- main styling ---*/
+
+main {
+    position: relative;
+    top: 40px;
+}
+
+/* hero section */
+
+.mission-background-img {
+    width: 1200px;
+    height: 700px;
+    background-image: url("../media/img-mission-background.jpg");
+    margin: auto;
+}
+
+.hero-title-section {
+    width: 100%;
+}
+
+.hero-title-text {
+    position: relative;
+    background-color: black;
+    width: 1200px;
+    text-align: center;
+    top: 50%;
+    z-index: 1;
+}
+
+/* featured tea section */
+
+.tea-of-the-month-section {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid red;
+    justify-content: center;
+}
+
+.tea-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    border: 1px solid red;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex: 2 1 300px;
+}
+
+.tea-grid h4 {
+    margin-top: 10px;
 }
 
 .tea-grid img {
     width: 300px;
     height: 200px;
 }
+
+/* locations section */
