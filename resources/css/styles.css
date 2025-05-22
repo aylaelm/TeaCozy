@@ -94,7 +94,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 1000px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
@@ -111,18 +111,18 @@ main {
 /* TO DO: Remove all manual spacing and ensure nothing overlaps and the location content stays centered */
 
 .locations-section {
-    display: block;
+    display: flex;
     width: 1200px;
     height: 500px;
     background-image: url("../media/img-locations-background.jpg");
     margin: auto;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .locations-content {
-    position: relative;
-    height: 100%;
-    padding: 20px;
+    position: absolute;
 }
 
 .locations h2 {
@@ -130,10 +130,8 @@ main {
 }
 
 .locations-grid {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 1000px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -142,6 +140,7 @@ main {
     opacity: 1;
     line-height: 40px;
     width: 300px;
+    margin: auto;
 }
 
 /*--- footer ---*/
