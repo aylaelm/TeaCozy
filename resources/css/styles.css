@@ -108,6 +108,7 @@ main {
 }
 
 /* locations section */
+/* TO DO: Remove all manual spacing and ensure nothing overlaps and the location content stays centered */
 
 .locations-section {
     display: block;
@@ -120,7 +121,8 @@ main {
 
 .locations-content {
     position: relative;
-    border: 1px solid red;
+    height: 100%;
+    padding: 20px;
 }
 
 .locations h2 {
@@ -146,5 +148,18 @@ main {
 
 footer {
     display: block;
-    border: 1px solid red;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.footer-info {
+    height: 200px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
